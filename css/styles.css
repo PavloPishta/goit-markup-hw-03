@@ -91,6 +91,7 @@ body {
 .section-description {
     margin-top: 0;
     margin-bottom: 0;
+
     line-height: 1.71;
     color: var(--secondary-text-color);
 }
@@ -118,6 +119,8 @@ body {
 .page-header {
     padding-top: 24px;
     padding-bottom: 24px;
+
+    border: 1px solid #ECECEC;
 }
 .container {
     width: 1200px;
@@ -191,7 +194,6 @@ body {
 /*========== /HEADER ========== */
 
 /*========== HERO ========== */
-
 
 .modal-btn {
     min-width: 200px;
@@ -336,9 +338,6 @@ body {
 /*========== /INDEX.HTML ========== */
 
 /*========== PORTFOLIO.HTML ========== */
-.portfolio-header{
-    border-bottom: 1px solid #ECECEC;
-}
 /*========== COMPANY-PRODUCTS ========== */
 
 .company-products-list{
@@ -398,15 +397,14 @@ body {
 
 .portfolio-list-item {
     flex-basis: calc((100% - 60px) / 3);
-
-    background-color: #FFFFFF;
-    border: 1px solid #EEEEEE;
-
 }
 .portfolio-list-item-wrapper {
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 24px;
+
+    background-color: #FFFFFF;
+    border: 1px solid #EEEEEE;
 }
 /*========== /COMPANY-PRODUCTS ========== */
 /*========== /PORTFOLIO.HTML ========== */
