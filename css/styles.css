@@ -25,30 +25,60 @@
     --address-link-text-color: rgba(255, 255, 255, 0.6);
 }
 
-img {
-    display: block;
-    max-width: 100%; 
-    height: auto;
-}
-.list {
-    list-style:none;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 0;
-    padding-right: 0;
-}
-
-.link {
-    text-decoration: none;
-
-}
-
 body {
     font-family: var(--primary-font);
     color: var(--primary-text-color);
     background-color: var(--page-dominated-background-color);
     font-size: 14px;
     letter-spacing: 0.03em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+address {
+    font-style: normal;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.container {
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.list {
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+.link {
+    text-decoration: none;
+
 }
 
 /*========== COMPONENTS ========== */
@@ -61,13 +91,8 @@ body {
     color: var(--accent-color);
 
 }
-.section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
 
 .section-title {
-    margin-top: 0;
     margin-bottom: 50px;
 
     font-weight: 700;
@@ -78,7 +103,6 @@ body {
 }
 
 .section-subtitle {
-    margin-top: 0;
     margin-bottom: 10px;
 
     font-size: 14px;
@@ -89,9 +113,6 @@ body {
 
 
 .section-description {
-    margin-top: 0;
-    margin-bottom: 0;
-
     line-height: 1.71;
     color: var(--secondary-text-color);
 }
@@ -117,22 +138,12 @@ body {
 
 /*========== HEADER ========== */
 .page-header {
-    padding-top: 24px;
-    padding-bottom: 24px;
+    border-bottom: 1px solid #ECECEC;
+}
 
-    border: 1px solid #ECECEC;
-}
-.container {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
-}
 .page-header-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 .page-nav {
     display: flex;
@@ -144,6 +155,7 @@ body {
 }
 .contact-list {
     display: flex;
+    margin-left: auto;
 }
 .menu-item:not(:last-child) {
     margin-right: 50px;
@@ -165,6 +177,7 @@ body {
 }
 
 .contact-list .contact-link {
+    display: block;
     padding-top: 32px;
     padding-bottom: 32px;
 }
@@ -197,18 +210,15 @@ body {
 
 .modal-btn {
     min-width: 200px;
-    padding: 9px 22px;
+    padding: 10px 32px;
 
     font-weight: 700;
     font-size: 16px;
-    font-family: var(--primary-font);
     line-height: 1.87;
     letter-spacing: 0.06em;
     color: var(--studio-button-text-color);
     background-color: var(--studio-button-background-color);
-    cursor: pointer;  
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
 }
 
 .modal-btn:hover,
@@ -227,7 +237,6 @@ body {
     max-width: 696px;
     margin-left: auto;
     margin-right: auto;
-    margin-top:0;
     margin-bottom: 30px;
 
     font-weight: 900;
@@ -263,6 +272,9 @@ body {
 /*========== /COMPANY QUALITIES ========== */
 
 /*========== COMPANY ACTIVITY ========== */
+.company-activity {
+    padding-top: 0;
+}
 .company-activity-list {
     display: flex;
     flex-wrap: wrap;
@@ -295,6 +307,10 @@ body {
 .employees {
     background-color:var(--page-background-color2);
 }
+
+.employee-subtitle {
+    font-size: 16px;
+}
 .employees-list-item-wrapper {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -309,7 +325,6 @@ body {
     background-color:var(--page-background-color);
 }
 .address-link {
-    font-style: normal;
     font-weight: 400;
     line-height: 1.71;
     color: var(--address-link-text-color);
@@ -347,7 +362,7 @@ body {
 
 }
 
-.classification-type:not(first-child) {
+.classification-type:not(:first-child) {
     margin-left: 8px;
 }
 .choice-btn {
@@ -360,9 +375,6 @@ body {
     color: var(--portfolio-button-text-color);
     background-color: var(--portfolio-button-background-color);
     letter-spacing: 0.03em;
-    border-radius: 4px;
-    border: none;
-    cursor: pointer;
 }
 
 .choice-btn:hover,
@@ -401,12 +413,10 @@ body {
     flex-basis: calc((100% - 60px) / 3);
 }
 .portfolio-list-item-wrapper {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 24px;
+    padding: 20px 24px;
 
-    background-color: #FFFFFF;
     border: 1px solid #EEEEEE;
+    border-top: none;
 }
 /*========== /COMPANY-PRODUCTS ========== */
 /*========== /PORTFOLIO.HTML ========== */
